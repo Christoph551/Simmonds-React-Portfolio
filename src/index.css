@@ -13,7 +13,8 @@ code {
 }
 
 .App {
-  background-color: #e9ebf8;
+  background-color: #342e37;
+  color: white;
   padding: 20px;
   min-height: 100vh;
 }
@@ -21,4 +22,19 @@ code {
 .css-1t6c9ts {
   display: flex;
   justify-content: flex-end;
+}
+
+
+h2 {
+  color: #e9ebf8;
+}
+
+.css-1t6c9ts button {
+  background-color: #342e37;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 5px;
+  margin: 5px;
+  font-size: .8rem;
 }
