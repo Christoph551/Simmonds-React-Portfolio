@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 import ButtonBase from '@mui/material/ButtonBase';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { Link } from 'react-router-dom';
-import couchPotatoAssistant from '../images/Couch-Potato-Assistant.png'
+import couchPotatoAssistant from '../../images/Couch-Potato-Assistant.png'
 
 const Img = styled('img')({
     margin: 'auto',
