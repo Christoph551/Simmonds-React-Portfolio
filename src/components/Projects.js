@@ -1,10 +1,9 @@
-import Portfolio from '../components/pages/Portfolio';
 import Project1 from '../images/Couch-Potato-Assistant.png';
 import Project2 from '../images/Password-Generator.png';
 import Project3 from '../images/Express-Note-Taker.png';
 import Project4 from '../images/JATE.PNG';
 import Project5 from '../images/E-Commerce.PNG';
-import Project6 from '../images/Simmonds-Portfolio.png';
+import Project6 from '../images/README-Generator.PNG';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import ButtonBase from '@mui/material/ButtonBase';
@@ -75,11 +74,15 @@ const projects = [
 
 export default function ProjectContent(props) {
     return (
-        <div>
-            {props.projects.map(item => (
-                <Grid container spacing={4}>
-                <Grid item>
-                    <ButtonBase sx={{ width: 128, height: 128 }}>
+        <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between', borderBottom: 5}}>
+            {projects.map(item => (
+                <div style={{justifyContent: 'center'}}>
+
+                <Grid container spacing={2} key={item.id} style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between'}}>
+                <Grid item 
+                
+                >
+                    <ButtonBase sx={{ width: 150, height: 150 }}>
                         <Link 
                             to={item.link}
                             target="_blank">
@@ -112,10 +115,8 @@ export default function ProjectContent(props) {
                     </Grid>
                 </Grid>
             </Grid>
-        ))}
-            <div>
-                <Portfolio projects={projects}/>
-            </div>
         </div>
+        ))}
+        </div> 
     );
 }

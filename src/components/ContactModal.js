@@ -1,5 +1,7 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
+import emailjs from '@emailjs/browser';
 import { validateEmail } from "../utils/helpers";
+import Button from '@mui/material/Button';
 
 function Contact() {
 	const [formState, setFormState] = useState({
@@ -9,8 +11,19 @@ function Contact() {
 	});
 
 	const [errorMessage, setErrorMessage] = useState("");
-
 	const { name, email, message } = formState;
+	const form = useRef();
+
+	const sendEmail = (e) => {
+		e.preventDefault();
+
+		emailjs.sendForm('service_c0kytx6', 'template_tuk574e', form.current, 'Q6MtIbz_bMsCdyhX1')
+			.then((result) => {
+				console.log(result.text);
+			}, (error) => {
+				console.log(error.text);
+			});
+	};
 
 	function handleEmail(e) {
 		if (e.target.name === "email") {
@@ -32,7 +45,7 @@ function Contact() {
 	}
 
 	function handleEmpty(e) {
-		if (e.target.name === "Name" || e.target.name === "Message") {
+		if (e.target.name === "name" || e.target.name === "message") {
 			if (!e.target.value.length) {
 				setErrorMessage(`${e.target.name} is required.`);
 			} else {
@@ -58,12 +71,18 @@ function Contact() {
 				fontSize: 40
 			}}>Contact</h2>
 			<div>
-				<form className="form" style={{ display: 'flex', flexDirection: 'column' }}>
+				<form 
+				ref={form} onSubmit={sendEmail}
+				className="form" 
+				style={{ 
+					display: 'flex', 
+					flexDirection: 'column' 
+					}}>
 					<div style={{margin: 20}}>
 						<div>
 							<label className="contactTitle" style={{color: 'white'}}>Name:</label>
 						</div>
-						<input className="userInput" type="text" defaultValue={name} onBlur={handleEmpty} name="Name"/>
+						<input className="userInput" type="text" defaultValue={name} onBlur={handleEmpty} name="name"/>
 					</div>
 					<div style={{margin: 20}}>
 						<div>
@@ -73,16 +92,25 @@ function Contact() {
 					</div>
 					<div style={{margin: 20}}>
 						<div>
-							<label className="contactTitle" htmlFor="Message" style={{color: 'white', minHeight: 200}}>Message:</label>
+							<label className="contactTitle" htmlFor="Message" style={{color: 'white', maxHeight: 200}}>Message:</label>
 						</div>
-						<textarea className="messageInput" name="Message" defaultValue={message} onBlur={handleEmpty}/>
+						<textarea  name="message" className="messageInput" defaultValue={message} onBlur={handleEmpty}/>
 					</div>
 					{errorMessage && (
-						<div>
-							<p>{errorMessage}</p>
+						<div style={{display: 'flex', justifyContent: 'center'}}>
+							<p style={{ color: '#ba1200'}}>{errorMessage}</p>
 						</div>
 					)}
 				</form>
+					<Button 
+                        autoFocus color="inherit" 
+                        onClick={sendEmail}
+                        style={{
+                            color: '#e9ebf8', 
+                            fontSize: 18}}
+                            >
+                            Send Message
+                        </Button>
 			</div>
 		</main>
 	);

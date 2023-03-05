@@ -47,7 +47,7 @@ export default function FullScreenDialog() {
             </Button>
             <div style={{ marginTop: 50 }}>
                 <p>
-                    I'd love to hear from you! Click the box above to send me a message, or email me at <a href="mailto:christophersimmonds551@gmail.com">christophersimmonds551@gmail.com</a> You can also visit the Resume tab to review and download my resume. Additionally, you can find me on <a href="https://www.linkedin.com/in/christopher-simmonds-b8721486/" target="_blank" rel="noreferrer">LinkedIn</a> and <a href="https://www.github.com/Christoph551" target="_blank" rel="noreferrer">GitHub</a>.
+                    I'd love to hear from you! By clicking the box above, you can send me a quick email. Let me know what you think of the site and/or my other projects!<br/> <br/> You can also visit the Resume tab to review and download my resume. <br/> <br/>Additionally, you can find me on LinkedIn and GitHub. Just click on the icons at the bottom of the screen and it'll take you to my respective profile!
                 </p>
             </div>
             <Dialog
@@ -69,9 +69,7 @@ export default function FullScreenDialog() {
                         <Typography sx={{ ml: 2, flex: 1 }} variant="h6" component="div" style={{color: '#e9ebf8', fontSize: 18}}>
                             Contact Me
                         </Typography>
-                        <Button autoFocus color="inherit" onClick={handleClose} style={{color: '#e9ebf8', fontSize: 18}}>
-                            Send Message
-                        </Button>
+                        
                     </Toolbar>
                 </AppBar>
                 <ContactModal />
