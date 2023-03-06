@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# Simmonds-React-Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+This is a site developed using react to showcase all I've learned so far from the coding bootcamp and present a professional portfolio to potential employers. I decided to familiarize myself with some additional npm dependencies during this project. MUI has some really useful and aesthetic component structures. I learned a good deal about manupulating elements and strive to keep imporving the overall aesthetic and user experience. 
 
-### `npm start`
+## Table of contents
+- [Installation](#Insallation)
+- [Deployment](#Deployment)
+- [Usage](#Usage)
+- [Contribution](#Contributing)
+- [Test](#Test)
+- [Questions](#Questions)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+I am using the following dependencies for this application:
+ - [React](https://www.npmjs.com/package/react) - Version 18.2.0
+ - [React-Router-Dom](https://www.npmjs.com/package/react-router-dom) - Version 6.8.2
+ - [React-Dom](https://www.npmjs.com/package/react-dom) - Version 18.2.0
+ - [React-Scripts](https://www.npmjs.com/package/react-scripts) - Version 5.0.1
+ - [MUI/Material](https://mui.com/material-ui/getting-started/installation/) - Version 5.11.11
+    - Also using mui/icons-material and mui/styled-engine-sc
+ - [Bootstrap](https://www.npmjs.com/package/bootstrap) - Version 5.2.3
+ - [Prop-Types](https://www.npmjs.com/package/prop-types) - Version 15.8.1
 
-### `npm test`
+ For additional packages, please see the associated package.json file.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Deployment
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This is currently deployed on Github Pages - https://christoph551.github.io/Simmonds-React-Portfolio/
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Usage
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+I invite all who are viewing this repository to visit the Portfolio and provide me with some feedback. I am open to positive and constructive criticisms. There is a fully functional Contact Me view that will allow you to shoot me an email. Simply enter your name, email and a message! 
 
-### `npm run eject`
+## Contributing
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Josh Minor, Anthony Frederick
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Test
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+npm run test
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Questions
 
-## Learn More
+Have questions? Please feel free to reach out to me at:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+GitHub Username: [Christoph551](https://github.com/Christoph551)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Email: [Email](mailto:christophersimmonds551@gmail.com)
