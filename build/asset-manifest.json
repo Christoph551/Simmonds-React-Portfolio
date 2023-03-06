@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.bccf7423.css",
-    "main.js": "/static/js/main.e025cef7.js",
-    "static/media/chrisPhoto.jpg": "/static/media/chrisPhoto.faf9a9e87c55ca11d4f9.jpg",
-    "static/media/E-Commerce.PNG": "/static/media/E-Commerce.cb1fbc0aa4b0225b8fd8.PNG",
-    "static/media/Password-Generator.png": "/static/media/Password-Generator.838c6a78427b60437102.png",
-    "static/media/README-Generator.PNG": "/static/media/README-Generator.4ca2f7f2a620386c1127.PNG",
-    "static/media/resume.pdf": "/static/media/resume.96fb76fa710382863f40.pdf",
-    "static/media/Couch-Potato-Assistant.png": "/static/media/Couch-Potato-Assistant.ccbffe18adb8c8c8b723.png",
-    "static/media/JATE.PNG": "/static/media/JATE.d0a6796723d518e1a0b3.PNG",
-    "static/media/Express-Note-Taker.png": "/static/media/Express-Note-Taker.02f963dff3add0906240.png",
-    "index.html": "/index.html",
-    "main.bccf7423.css.map": "/static/css/main.bccf7423.css.map",
-    "main.e025cef7.js.map": "/static/js/main.e025cef7.js.map"
+    "main.css": "/Simmonds-React-Portfolio/static/css/main.bccf7423.css",
+    "main.js": "/Simmonds-React-Portfolio/static/js/main.ff0be9be.js",
+    "static/media/chrisPhoto.jpg": "/Simmonds-React-Portfolio/static/media/chrisPhoto.faf9a9e87c55ca11d4f9.jpg",
+    "static/media/E-Commerce.PNG": "/Simmonds-React-Portfolio/static/media/E-Commerce.cb1fbc0aa4b0225b8fd8.PNG",
+    "static/media/Password-Generator.png": "/Simmonds-React-Portfolio/static/media/Password-Generator.838c6a78427b60437102.png",
+    "static/media/README-Generator.PNG": "/Simmonds-React-Portfolio/static/media/README-Generator.4ca2f7f2a620386c1127.PNG",
+    "static/media/resume.pdf": "/Simmonds-React-Portfolio/static/media/resume.96fb76fa710382863f40.pdf",
+    "static/media/Couch-Potato-Assistant.png": "/Simmonds-React-Portfolio/static/media/Couch-Potato-Assistant.ccbffe18adb8c8c8b723.png",
+    "static/media/JATE.PNG": "/Simmonds-React-Portfolio/static/media/JATE.d0a6796723d518e1a0b3.PNG",
+    "static/media/Express-Note-Taker.png": "/Simmonds-React-Portfolio/static/media/Express-Note-Taker.02f963dff3add0906240.png",
+    "index.html": "/Simmonds-React-Portfolio/index.html",
+    "main.bccf7423.css.map": "/Simmonds-React-Portfolio/static/css/main.bccf7423.css.map",
+    "main.ff0be9be.js.map": "/Simmonds-React-Portfolio/static/js/main.ff0be9be.js.map"
   },
   "entrypoints": [
     "static/css/main.bccf7423.css",
-    "static/js/main.e025cef7.js"
+    "static/js/main.ff0be9be.js"
   ]
 }
