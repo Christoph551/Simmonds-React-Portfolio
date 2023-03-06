@@ -2,6 +2,10 @@ import { useState, useRef } from "react";
 import emailjs from '@emailjs/browser';
 import { validateEmail } from "../utils/helpers";
 import Button from '@mui/material/Button';
+import SendIcon from '@mui/icons-material/Send';
+import TextField from '@mui/material/TextField';
+import Input from '@mui/material/Input';
+import Paper from '@mui/material/Paper';
 
 function Contact() {
 	const [formState, setFormState] = useState({
@@ -67,6 +71,7 @@ function Contact() {
 			backgroundColor: '#342e37',
 			minHeight: '100vh'
 		}}>
+			
 			<h2 style={{
 				fontSize: 40
 			}}>Contact</h2>
@@ -76,25 +81,26 @@ function Contact() {
 				className="form" 
 				style={{ 
 					display: 'flex', 
+					justifyContent: 'center',
 					flexDirection: 'column' 
 					}}>
 					<div style={{margin: 20}}>
 						<div>
 							<label className="contactTitle" style={{color: 'white'}}>Name:</label>
 						</div>
-						<input className="userInput" type="text" defaultValue={name} onBlur={handleEmpty} name="name"/>
+						<Input style={{backgroundColor: 'white'}} className="userInput" type="text" defaultValue={name} onBlur={handleEmpty} name="name"/>
 					</div>
 					<div style={{margin: 20}}>
 						<div>
 							<label className="contactTitle" htmlFor="email" style={{color: 'white'}}>Email address:</label>
 						</div>
-						<input className="userInput" type="email" defaultValue={email} name="email" onBlur={handleEmail}/>
+						<Input style={{backgroundColor: 'white'}} className="userInput" type="email" defaultValue={email} name="email" onBlur={handleEmail}/>
 					</div>
 					<div style={{margin: 20}}>
 						<div>
 							<label className="contactTitle" htmlFor="Message" style={{color: 'white', maxHeight: 200}}>Message:</label>
 						</div>
-						<textarea  name="message" className="messageInput" defaultValue={message} onBlur={handleEmpty}/>
+						<TextField  style={{backgroundColor: 'white', color: 'white'}} name="message" className="messageInput" defaultValue={message} onBlur={handleEmpty}/>
 					</div>
 					{errorMessage && (
 						<div style={{display: 'flex', justifyContent: 'center'}}>
@@ -105,12 +111,17 @@ function Contact() {
 					<Button 
                         autoFocus color="inherit" 
                         onClick={sendEmail}
+						className="btn btn-secondary"
                         style={{
+							display: 'flex',
+							alignItems: 'center',
                             color: '#e9ebf8', 
                             fontSize: 18}}
                             >
                             Send Message
-                        </Button>
+							<p>___</p>
+						<SendIcon/>
+					</Button>
 			</div>
 		</main>
 	);

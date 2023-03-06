@@ -8,6 +8,8 @@ import Typography from '@mui/material/Typography';
 import CloseIcon from '@mui/icons-material/Close';
 import Slide from '@mui/material/Slide';
 import ContactModal from '../ContactModal';
+import Paper from '@mui/material/Paper';
+
 
 const Transition = React.forwardRef(function Transition(props, ref) {
     return <Slide direction="left" ref={ref} {...props} />;
@@ -25,7 +27,23 @@ export default function FullScreenDialog() {
     };
 
     return (
-        <div>
+        <div style={{
+            display: 'flex', 
+            justifyContent: 'center', 
+            }}>
+            <Paper
+                
+                sx={{
+                    p: 2,
+                    marginTop: 10,
+                    maxWidth: 1000,
+                    flexGrow: 1,
+                    color: 'white',
+                    backgroundColor: (theme) =>
+                    theme.palette.mode === 'light' ? '#011627' : '#fafffd',
+                }}
+                >
+
             <Button
                 variant="outlined"
                 onClick={handleClickOpen}
@@ -40,9 +58,9 @@ export default function FullScreenDialog() {
                     outline: 'none',
                     cursor: 'pointer',
                     boxShadow: '0 0 30px 0 rgba(0,0,0,0.5)',
-                    marginTop: 100
+                    marginTop: 50
                 }}
-            >
+                >
                 Contact Me
             </Button>
             <div style={{ marginTop: 50 }}>
@@ -55,7 +73,7 @@ export default function FullScreenDialog() {
                 open={open}
                 onClose={handleClose}
                 TransitionComponent={Transition}
-            >
+                >
                 <AppBar sx={{ position: 'relative' }}>
                     <Toolbar>
                         <IconButton
@@ -63,7 +81,7 @@ export default function FullScreenDialog() {
                             color="inherit"
                             onClick={handleClose}
                             aria-label="close"
-                        >
+                            >
                             <CloseIcon />
                         </IconButton>
                         <Typography sx={{ ml: 2, flex: 1 }} variant="h6" component="div" style={{color: '#e9ebf8', fontSize: 18}}>
@@ -74,6 +92,7 @@ export default function FullScreenDialog() {
                 </AppBar>
                 <ContactModal />
             </Dialog>
+                            </Paper>
         </div>
     );
 }

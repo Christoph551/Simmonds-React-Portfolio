@@ -7,7 +7,7 @@ function DrawerAppBar(props) {
     return (
         <main style={{display: 'flex', justifyContent: 'center'}}>
             <Card 
-            style={{backgroundColor: "#e9ebf8", marginTop: 100}}
+            style={{backgroundColor: "#011627", color: 'white', marginTop: 100}}
             sx={{ maxWidth: 700 }}>
                     <Box 
                     component="main"
