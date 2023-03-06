@@ -37,7 +37,7 @@ This is currently deployed on Github Pages - https://christoph551.github.io/Simm
 
 I invite all who are viewing this repository to visit the Portfolio and provide me with some feedback. I am open to positive and constructive criticisms. There is a fully functional Contact Me view that will allow you to shoot me an email. Simply enter your name, email and a message! 
 
-## Contributing
+## Collaborators
 
 Josh Minor, Anthony Frederick
 

@@ -16,7 +16,7 @@ function App() {
     <div className='App'>
 
     <Routes>
-          <Route path="/" element={<AppContainer />}>
+          <Route path="/Simmonds-React-Portfolio" element={<AppContainer />}>
             <Route index element={<AboutMe />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/contact" element={<Contact />} />

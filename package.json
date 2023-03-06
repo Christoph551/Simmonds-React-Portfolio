@@ -1,7 +1,7 @@
 {
   "name": "simmonds-react-portfolio",
   "version": "0.1.0",
-  "homepage": "http://christoph551.github.io/Simmonds-React-Portfolio/",
+  "homepage": "https://christoph551.github.io/Simmonds-React-Portfolio",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
