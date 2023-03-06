@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Simmonds-React-Portfolio/static/css/main.bccf7423.css",
-    "main.js": "/Simmonds-React-Portfolio/static/js/main.ff0be9be.js",
+    "main.css": "/Simmonds-React-Portfolio/static/css/main.08dfa523.css",
+    "main.js": "/Simmonds-React-Portfolio/static/js/main.0ed8d498.js",
     "static/media/chrisPhoto.jpg": "/Simmonds-React-Portfolio/static/media/chrisPhoto.faf9a9e87c55ca11d4f9.jpg",
     "static/media/E-Commerce.PNG": "/Simmonds-React-Portfolio/static/media/E-Commerce.cb1fbc0aa4b0225b8fd8.PNG",
     "static/media/Password-Generator.png": "/Simmonds-React-Portfolio/static/media/Password-Generator.838c6a78427b60437102.png",
@@ -11,11 +11,11 @@
     "static/media/JATE.PNG": "/Simmonds-React-Portfolio/static/media/JATE.d0a6796723d518e1a0b3.PNG",
     "static/media/Express-Note-Taker.png": "/Simmonds-React-Portfolio/static/media/Express-Note-Taker.02f963dff3add0906240.png",
     "index.html": "/Simmonds-React-Portfolio/index.html",
-    "main.bccf7423.css.map": "/Simmonds-React-Portfolio/static/css/main.bccf7423.css.map",
-    "main.ff0be9be.js.map": "/Simmonds-React-Portfolio/static/js/main.ff0be9be.js.map"
+    "main.08dfa523.css.map": "/Simmonds-React-Portfolio/static/css/main.08dfa523.css.map",
+    "main.0ed8d498.js.map": "/Simmonds-React-Portfolio/static/js/main.0ed8d498.js.map"
   },
   "entrypoints": [
-    "static/css/main.bccf7423.css",
-    "static/js/main.ff0be9be.js"
+    "static/css/main.08dfa523.css",
+    "static/js/main.0ed8d498.js"
   ]
 }

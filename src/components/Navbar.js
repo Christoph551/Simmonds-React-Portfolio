@@ -37,7 +37,7 @@ function ResponsiveAppBar() {
                         variant="h6"
                         noWrap
                         component="a"
-                        href="/aboutme"
+                        href="/Simmonds-React-Portfolio"
                         sx={{
                             mr: 2,
                             display: { xs: 'none', md: 'flex' },
