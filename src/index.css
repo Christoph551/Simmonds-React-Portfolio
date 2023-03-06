@@ -39,3 +39,7 @@ h2 {
   justify-content: center;
   align-items: center;
 }
+
+.navbar {
+  background-color: black;
+}

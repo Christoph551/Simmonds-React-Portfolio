@@ -28,14 +28,16 @@ function ResponsiveAppBar() {
 
 
     return (
-        <AppBar position="static">
+        <AppBar position="static" classes={{
+            root: 'navbar'
+        }}>
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
                     <Typography
                         variant="h6"
                         noWrap
                         component="a"
-                        href="/Simmonds-React-Portfolio"
+                        href="/aboutme"
                         sx={{
                             mr: 2,
                             display: { xs: 'none', md: 'flex' },
@@ -90,7 +92,7 @@ function ResponsiveAppBar() {
                         </Menu>
                     </Box>
                     <Avatar alt="Remy Sharp" src={Photo} />
-                    <Link to="/" style={{ textDecoration: 'none', marginLeft: 15, color: 'white' }}>
+                    <Link to="/Simmonds-React-Portfolio" style={{ textDecoration: 'none', marginLeft: 15, color: 'white' }}>
 
                         <Typography
                             variant="h5"
