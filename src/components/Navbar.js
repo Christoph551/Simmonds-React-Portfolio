@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom'
 import Avatar from '@mui/material/Avatar';
 import Photo from '../images/chrisPhoto.jpg'
 
-const pages = ['Portfolio', 'Contact', 'Resume'];
+const pages = ['About', 'Portfolio', 'Contact', 'Resume'];
 
 function ResponsiveAppBar() {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
