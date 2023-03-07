@@ -22,12 +22,13 @@ export default function FixedBottomNavigation() {
                     onChange={(event, newValue) => {
                         setValue(newValue);
                     }}
+                    style={{ backgroundColor: '#56351e', opacity: '75%' }}
                 >   
                     <Link to="https://github.com/Christoph551" target="_blank">
-                        <BottomNavigationAction label="GitHub" icon={<GitHubIcon />} />
+                        <BottomNavigationAction style={{ color: 'white'}} label="GitHub" icon={<GitHubIcon />} />
                     </Link>
                     <Link to="https://www.linkedin.com/in/christopher-simmonds-b8721486/" target="_blank">
-                        <BottomNavigationAction label="LinkedIn" icon={<LinkedInIcon />} />
+                        <BottomNavigationAction style={{ color: 'white'}} label="LinkedIn" icon={<LinkedInIcon />} />
                     </Link>
                 </BottomNavigation>
             </Paper>

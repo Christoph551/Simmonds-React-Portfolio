@@ -13,7 +13,9 @@ code {
 }
 
 .App {
-  background-color: #342e37;
+  background-image: url("./images/Background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
   padding: 20px;
   min-height: 100vh;
@@ -25,7 +27,8 @@ code {
 }
 
 h2 {
-  color: #ba1200;
+  color: #56351e;
+  font-weight: bolder;
 }
 
 
@@ -38,8 +41,4 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.navbar {
-  background-color: black;
 }

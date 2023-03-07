@@ -16,7 +16,8 @@ function Resume() {
                     flexGrow: 1,
                     color: 'white',
                     backgroundColor: (theme) =>
-                        theme.palette.mode === 'light' ? '#011627' : '#fafffd',
+                        theme.palette.mode === 'light' ? '#b48b7d' : '#fafffd',
+                    opacity: '75%'
                 }}
             >
                 <div className="container">
@@ -28,14 +29,14 @@ function Resume() {
                     }}>
                         <button className="btn btn-secondary" style={{
                             margin: "20px",
+                            backgroundColor: '#56351e'
                         }}><a
                             href={MyResume}
-                            style={{ color: '#b4dc7f' }}
+                            style={{ color: 'white' }}
                             download="../../resume/resume.pdf"
                         >
                                 Download My Resume Here
                             </a>
-
                         </button>
 
                         {/* Start of front-end tech */}
@@ -48,9 +49,9 @@ function Resume() {
                                     margin: 20,
                                 }}>
                                 <h3 style={{
-                                    color: '#b4dc7f',
+                                    color: '#56351e',
                                     listStyle: 'none',
-                                    borderBottom: '1px solid #b4dc7f',
+                                    borderBottom: '1px solid #b48b7d',
                                 }}>
                                     Front-End Proficiencies
                                 </h3>
@@ -97,71 +98,66 @@ function Resume() {
                             }}>
                                 <li className="list-item">Bootstrap</li>
                             </div>
-                            </ul>
+                        </ul>
+                    </div>
+                </div>
 
-                            {/* Start of back-end tech */}
-                            <div
-                                style={{
-                                    display: "flex",
-                                    justifyContent: "center",
-                                    alignItems: "center",
-                                    margin: 20,
-                                }}>
-                                    
-                            <ul class="list-group list-group-flush">
-                                <h3 style={{
-                                    color: '#b4dc7f',
-                                    listStyle: 'none',
-                                    borderBottom: '1px solid #b4dc7f',
-                                }}>
-                                    Back-End Proficiencies
-                                </h3>
-                                <div style={{
-                                    display: "flex",
-                                    alignItems: "center",
-                                }}>
-                                    <li className="list-item">RESTful APIs</li>
-                                </div>
-                                <div style={{
-                                    display: "flex",
-                                    alignItems: "center",
-                                }}>
-                                    <li className="list-item">MERN Stack</li>
-                                </div>
-                                <div style={{
-                                    display: "flex",
-                                    alignItems: "center",
-                                }}>
-                                    <li className="list-item">Node.js</li>
-                                </div>
-                                <div style={{
-                                    display: "flex",
-                                    alignItems: "center",
-                                }}>
-                                    <li className="list-item">Express.js</li>
-                                </div>
-                                <div style={{
-                                    display: "flex",
-                                    alignItems: "center",
-                                }}>
-                                    <li className="list-item">MySQL and Sequelize</li>
-                                </div>
-                                <div style={{
-                                    display: "flex",
-                                    alignItems: "center",
-                                }}>
-                                    <li className="list-item">MongoDB and Mongoose</li>
-                                </div>
-                                <div style={{
-                                    display: "flex",
-                                    alignItems: "center",
-                                }}>
-                                    <li className="list-item">GraphQL</li>
-                                </div>
-                            </ul>
-                        </div>
+                {/* Start of back-end tech */}
+                <div className="container">
+                    <div style={{display: 'flex', justifyContent: 'center', marginTop: 20}}>
 
-                        
+                        <ul class="list-group list-group-flush">
+                            <h3 style={{
+                                color: '#56351e',
+                                listStyle: 'none',
+                                borderBottom: '1px solid #b48b7d',
+                            }}>
+                                Back-End Proficiencies
+                            </h3>
+                            <div style={{
+                                display: "flex",
+                                alignItems: "center",
+                            }}>
+                                <li className="list-item">RESTful APIs</li>
+                            </div>
+                            <div style={{
+                                display: "flex",
+                                alignItems: "center",
+                            }}>
+                                <li className="list-item">MERN Stack</li>
+                            </div>
+                            <div style={{
+                                display: "flex",
+                                alignItems: "center",
+                            }}>
+                                <li className="list-item">Node.js</li>
+                            </div>
+                            <div style={{
+                                display: "flex",
+                                alignItems: "center",
+                            }}>
+                                <li className="list-item">Express.js</li>
+                            </div>
+                            <div style={{
+                                display: "flex",
+                                alignItems: "center",
+                            }}>
+                                <li className="list-item">MySQL and Sequelize</li>
+                            </div>
+                            <div style={{
+                                display: "flex",
+                                alignItems: "center",
+                            }}>
+                                <li className="list-item">MongoDB and Mongoose</li>
+                            </div>
+                            <div style={{
+                                display: "flex",
+                                alignItems: "center",
+                            }}>
+                                <li className="list-item">GraphQL</li>
+                            </div>
+                        </ul>
+
                     </div>
                 </div>
             </Paper>

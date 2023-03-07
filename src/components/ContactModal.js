@@ -68,12 +68,14 @@ function Contact() {
 			alignItems: 'center',
 			justifyContent: 'center',
 			flexDirection: 'column',
-			backgroundColor: '#342e37',
-			minHeight: '100vh'
+			backgroundColor: '#b48b7d',
+			minHeight: '100vh',
+			opacity: '75%'
 		}}>
 			
 			<h2 style={{
-				fontSize: 40
+				fontSize: 40,
+				borderBottom: '2px solid #56351e',
 			}}>Contact</h2>
 			<div>
 				<form 
@@ -88,19 +90,19 @@ function Contact() {
 						<div>
 							<label className="contactTitle" style={{color: 'white'}}>Name:</label>
 						</div>
-						<Input style={{backgroundColor: 'white'}} className="userInput" type="text" defaultValue={name} onBlur={handleEmpty} name="name"/>
+						<Input style={{backgroundColor: 'white', padding: 14}} className="userInput" type="text" defaultValue={name} onBlur={handleEmpty} name="name"/>
 					</div>
 					<div style={{margin: 20}}>
 						<div>
 							<label className="contactTitle" htmlFor="email" style={{color: 'white'}}>Email address:</label>
 						</div>
-						<Input style={{backgroundColor: 'white'}} className="userInput" type="email" defaultValue={email} name="email" onBlur={handleEmail}/>
+						<Input style={{backgroundColor: 'white', padding: 14}} className="userInput" type="email" defaultValue={email} name="email" onBlur={handleEmail}/>
 					</div>
 					<div style={{margin: 20}}>
 						<div>
 							<label className="contactTitle" htmlFor="Message" style={{color: 'white', maxHeight: 200}}>Message:</label>
 						</div>
-						<TextField  style={{backgroundColor: 'white', color: 'white'}} name="message" className="messageInput" defaultValue={message} onBlur={handleEmpty}/>
+						<TextField  style={{backgroundColor: 'white', color: 'white', marginBottom: 20}} name="message" className="messageInput" defaultValue={message} onBlur={handleEmpty}/>
 					</div>
 					{errorMessage && (
 						<div style={{display: 'flex', justifyContent: 'center'}}>
@@ -108,20 +110,24 @@ function Contact() {
 						</div>
 					)}
 				</form>
+				<div style={{
+							display: 'flex',
+							justifyContent: 'center',
+							backgroundColor: '#56351e',
+                            color: '#b48b7d', 
+							borderRadius: '50%',
+                            fontSize: 18}}>
 					<Button 
                         autoFocus color="inherit" 
                         onClick={sendEmail}
 						className="btn btn-secondary"
-                        style={{
-							display: 'flex',
-							alignItems: 'center',
-                            color: '#e9ebf8', 
-                            fontSize: 18}}
+                        
                             >
                             Send Message
 							<p>___</p>
 						<SendIcon/>
 					</Button>
+				</div>
 			</div>
 		</main>
 	);

@@ -28,11 +28,11 @@ export default function FullScreenDialog() {
 
     return (
         <div style={{
-            display: 'flex', 
-            justifyContent: 'center', 
-            }}>
+            display: 'flex',
+            justifyContent: 'center',
+        }}>
             <Paper
-                
+
                 sx={{
                     p: 2,
                     marginTop: 10,
@@ -40,59 +40,60 @@ export default function FullScreenDialog() {
                     flexGrow: 1,
                     color: 'white',
                     backgroundColor: (theme) =>
-                    theme.palette.mode === 'light' ? '#011627' : '#fafffd',
+                        theme.palette.mode === 'light' ? '#b48b7d' : '#fafffd',
+                    opacity: '85%'
                 }}
-                >
+            >
 
-            <Button
-                variant="outlined"
-                onClick={handleClickOpen}
-                style={{
-                    backgroundColor: '#7b886f',
-                    color: 'white',
-                    fontWeight: 'bold',
-                    fontSize: '1.2rem',
-                    padding: '1rem 2rem',
-                    borderRadius: '10px',
-                    border: 'none',
-                    outline: 'none',
-                    cursor: 'pointer',
-                    boxShadow: '0 0 30px 0 rgba(0,0,0,0.5)',
-                    marginTop: 50
-                }}
+                <Button
+                    variant="outlined"
+                    onClick={handleClickOpen}
+                    style={{
+                        backgroundColor: '#56351e',
+                        color: 'white',
+                        fontWeight: 'bold',
+                        fontSize: '1.2rem',
+                        padding: '1rem 2rem',
+                        borderRadius: '10px',
+                        border: 'none',
+                        outline: 'none',
+                        cursor: 'pointer',
+                        boxShadow: '0 0 30px 0 rgba(0,0,0,0.5)',
+                        marginTop: 50,
+                    }}
                 >
-                Contact Me
-            </Button>
-            <div style={{ marginTop: 50 }}>
-                <p>
-                    I'd love to hear from you! By clicking the box above, you can send me a quick email. Let me know what you think of the site and/or my other projects!<br/> <br/> You can also visit the Resume tab to review and download my resume. <br/> <br/>Additionally, you can find me on LinkedIn and GitHub. Just click on the icons at the bottom of the screen and it'll take you to my respective profile!
-                </p>
-            </div>
-            <Dialog
-                fullScreen
-                open={open}
-                onClose={handleClose}
-                TransitionComponent={Transition}
+                    Contact Me
+                </Button>
+                <div style={{ marginTop: 50 }}>
+                    <p>
+                        I'd love to hear from you! By clicking the box above, you can send me a quick email. Let me know what you think of the site and/or my other projects!<br /> <br /> You can also visit the Resume tab to review and download my resume. <br /> <br />Additionally, you can find me on LinkedIn and GitHub. Just click on the icons at the bottom of the screen and it'll take you to my respective profile!
+                    </p>
+                </div>
+                <Dialog
+                    fullScreen
+                    open={open}
+                    onClose={handleClose}
+                    TransitionComponent={Transition}
                 >
-                <AppBar sx={{ position: 'relative' }}>
-                    <Toolbar>
-                        <IconButton
-                            edge="start"
-                            color="inherit"
-                            onClick={handleClose}
-                            aria-label="close"
+                    <AppBar sx={{ position: 'relative', backgroundColor: 'black', opacity: '85%' }}>
+                        <Toolbar>
+                            <IconButton
+                                edge="start"
+                                color="inherit"
+                                onClick={handleClose}
+                                aria-label="close"
                             >
-                            <CloseIcon />
-                        </IconButton>
-                        <Typography sx={{ ml: 2, flex: 1 }} variant="h6" component="div" style={{color: '#e9ebf8', fontSize: 18}}>
-                            Contact Me
-                        </Typography>
-                        
-                    </Toolbar>
-                </AppBar>
-                <ContactModal />
-            </Dialog>
-                            </Paper>
+                                <CloseIcon />
+                            </IconButton>
+                            <Typography sx={{ ml: 2, flex: 1 }} variant="h6" component="div" style={{ color: '#e9ebf8', fontSize: 18 }}>
+                                Contact Me
+                            </Typography>
+
+                        </Toolbar>
+                    </AppBar>
+                    <ContactModal />
+                </Dialog>
+            </Paper>
         </div>
     );
 }

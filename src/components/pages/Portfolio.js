@@ -18,7 +18,8 @@ export default function ProjectContents(props) {
                     flexGrow: 1,
                     color: 'white',
                     backgroundColor: (theme) =>
-                    theme.palette.mode === 'light' ? '#011627' : '#fafffd',
+                    theme.palette.mode === 'light' ? '#b48b7d' : '#fafffd',
+                    opacity: '75%'
                 }}
                 >
             <Projects/>

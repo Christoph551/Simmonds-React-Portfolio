@@ -11,7 +11,7 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { Link } from 'react-router-dom'
 import Avatar from '@mui/material/Avatar';
-import Photo from '../images/chrisPhoto.jpg'
+import Photo from '../images/logo.png'
 
 const pages = ['About', 'Portfolio', 'Contact', 'Resume'];
 
@@ -28,8 +28,9 @@ function ResponsiveAppBar() {
 
 
     return (
-        <AppBar position="static" classes={{
-            root: 'navbar'
+        <AppBar position="static" style={{
+            backgroundColor: 'black',
+            opacity: '75%'
         }}>
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
@@ -46,6 +47,7 @@ function ResponsiveAppBar() {
                             letterSpacing: '.3rem',
                             color: 'inherit',
                             textDecoration: 'none',
+                            border: '2px solid #56351e',
                         }}
                     >
                         Simmonds Portfolio
@@ -92,7 +94,7 @@ function ResponsiveAppBar() {
                         </Menu>
                     </Box>
                     <Avatar alt="Remy Sharp" src={Photo} />
-                    <Link to="/Simmonds-React-Portfolio" style={{ textDecoration: 'none', marginLeft: 15, color: 'white' }}>
+                    <Link to="/Simmonds-React-Portfolio" style={{ textDecoration: 'none', marginLeft: 15, color: 'white', }}>
 
                         <Typography
                             variant="h5"
@@ -118,7 +120,7 @@ function ResponsiveAppBar() {
                             <Button
                                 key={page}
                                 onClick={handleCloseNavMenu}
-                                sx={{ my: 2, color: 'white', display: 'flex' }}
+                                sx={{ my: 2, color: 'white', display: 'flex', border: '2px solid #56351e' }}
                             >
                                 <Link style={{textDecoration: 'none', color: 'white'}} to={`/${page}`}>
                                     {page}

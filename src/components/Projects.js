@@ -93,7 +93,7 @@ export default function ProjectContent(props) {
                 <Grid item xs={12} sm container>
                     <Grid item xs container direction="column" spacing={2}>
                         <Grid item xs>
-                            <Typography gutterBottom variant="subtitle1" component="h2" style={{fontSize: 24}}>
+                            <Typography gutterBottom variant="subtitle1" component="h2" style={{fontSize: 24, fontWeight: 'bold'}}>
                                 {item.title}
                             </Typography>
                             <Typography 
@@ -106,7 +106,11 @@ export default function ProjectContent(props) {
                     </Grid>
                     <Grid item>
                         <ButtonBase>
+                            GitHub
                             <Link 
+                                style={{
+                                    color: 'black',
+                                }}
                                 to={item.github}
                                 target="_blank">
                                 <GitHubIcon />
