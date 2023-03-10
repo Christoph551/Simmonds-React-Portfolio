@@ -15,15 +15,15 @@ function App() {
   return (
     <div className='App'>
 
-    <Routes>
-          <Route path="/" element={<AppContainer />}>
-            <Route index element={<AboutMe />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/resume" element={<Resume />} />
-            <Route path="/:text?" element={<AboutMe />} />
-          </Route>
-    </Routes>
+      <Routes>
+            <Route path="/Simmonds-React-Portfolio" element={<AppContainer />}>
+              <Route index element={<AboutMe />} />
+              <Route path="/Simmonds-React-Portfolio/Portfolio" element={<Portfolio />} />
+              <Route path="/Simmonds-React-Portfolio/Contact" element={<Contact />} />
+              <Route path="/Simmonds-React-Portfolio/Resume" element={<Resume />} />
+              <Route path="/Simmonds-React-Portfolio/:text?" element={<AboutMe />} />
+            </Route>
+      </Routes>
 
     </div>
   );

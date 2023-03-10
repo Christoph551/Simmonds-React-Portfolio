@@ -122,7 +122,7 @@ function ResponsiveAppBar() {
                                 onClick={handleCloseNavMenu}
                                 sx={{ my: 2, color: 'white', display: 'flex', border: '2px solid #56351e' }}
                             >
-                                <Link style={{textDecoration: 'none', color: 'white'}} to={`/${page}`}>
+                                <Link style={{textDecoration: 'none', color: 'white'}} to={`/Simmonds-React-Portfolio/${page}`}>
                                     {page}
                                 </Link>
                             </Button>
