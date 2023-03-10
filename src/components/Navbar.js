@@ -85,7 +85,7 @@ function ResponsiveAppBar() {
                             {pages.map((page) => (
                                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                                     <Typography textAlign="center">
-                                        <Link to={`/${page}`}>
+                                        <Link to={`/Simmonds-React-Portfolio/${page}`}>
                                             {page}
                                         </Link>
                                     </Typography>
