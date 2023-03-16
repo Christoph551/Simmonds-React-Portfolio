@@ -9,6 +9,7 @@ This is a site developed using react to showcase all I've learned so far from th
 ## Table of contents
 - [Installation](#Insallation)
 - [Deployment](#Deployment)
+- [Mockup](#Mockup)
 - [Usage](#Usage)
 - [Contribution](#Contributing)
 - [Test](#Test)
@@ -32,6 +33,10 @@ I am using the following dependencies for this application:
 ## Deployment
 
 This is currently deployed on Github Pages - https://christoph551.github.io/Simmonds-React-Portfolio/
+
+## Mockup
+
+![Screenshot](./src/images/Portfolio.png)
 
 ## Usage
 

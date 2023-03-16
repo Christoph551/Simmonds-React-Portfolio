@@ -4,6 +4,7 @@ import Project3 from '../images/Express-Note-Taker.png';
 import Project4 from '../images/JATE.PNG';
 import Project5 from '../images/E-Commerce.PNG';
 import Project6 from '../images/README-Generator.PNG';
+import Project7 from '../images/Gauntlet.png';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import ButtonBase from '@mui/material/ButtonBase';
@@ -68,6 +69,14 @@ const projects = [
         github: 'https://www.github.com/Christoph551/ReadMe-Generator',
         image: Project6
     },
+    {
+        id: 7,
+        title: 'Gauntlet',
+        description: "As a final project, we built a react based applicaiton that utilizes several of the technologies learned throughout the entirety of the bootcamp. I handled the majority of the font-end logic and styling with an emphesis on mobile responsiveness. This is certainly an application that I look forward to continuing to build on.",
+        link: 'https://thegauntlet.herokuapp.com/',
+        github: 'https://github.com/awalker2411/Gauntlet',
+        image: Project7
+    }
 ];
 
 
