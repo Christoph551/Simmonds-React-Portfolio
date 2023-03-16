@@ -1,7 +1,8 @@
 {
   "files": {
     "main.css": "/Simmonds-React-Portfolio/static/css/main.ac4aae59.css",
-    "main.js": "/Simmonds-React-Portfolio/static/js/main.8d37ce87.js",
+    "main.js": "/Simmonds-React-Portfolio/static/js/main.f2ea8e99.js",
+    "static/media/Gauntlet.png": "/Simmonds-React-Portfolio/static/media/Gauntlet.4274a4c948629bc8dcc4.png",
     "static/media/Simmonds-Background.jpg": "/Simmonds-React-Portfolio/static/media/Simmonds-Background.da6cb3850ecf4859b8f9.jpg",
     "static/media/logo.png": "/Simmonds-React-Portfolio/static/media/logo.f808ba9d43cafc31f644.png",
     "static/media/E-Commerce.PNG": "/Simmonds-React-Portfolio/static/media/E-Commerce.cb1fbc0aa4b0225b8fd8.PNG",
@@ -14,10 +15,10 @@
     "static/media/Express-Note-Taker.png": "/Simmonds-React-Portfolio/static/media/Express-Note-Taker.02f963dff3add0906240.png",
     "index.html": "/Simmonds-React-Portfolio/index.html",
     "main.ac4aae59.css.map": "/Simmonds-React-Portfolio/static/css/main.ac4aae59.css.map",
-    "main.8d37ce87.js.map": "/Simmonds-React-Portfolio/static/js/main.8d37ce87.js.map"
+    "main.f2ea8e99.js.map": "/Simmonds-React-Portfolio/static/js/main.f2ea8e99.js.map"
   },
   "entrypoints": [
     "static/css/main.ac4aae59.css",
-    "static/js/main.8d37ce87.js"
+    "static/js/main.f2ea8e99.js"
   ]
 }
